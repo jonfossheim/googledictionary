@@ -1,4 +1,4 @@
-export const apiUrl = 'https://api.dictionaryapi.dev/api/v2/entries/';
+export const apiUrl = 'https://api.dictionaryapi.dev/api/v2/entries';
 export const languages = [
    { code: 'en', language: 'english', msg: 'Discovery' },
    { code: 'es', language: 'spanish', msg: 'Descubrir' },
@@ -7,3 +7,7 @@ export const languages = [
    { code: 'it', language: 'italian', msg: 'Scoprire' },
    { code: 'pt-BR', language: 'brazilian portuguese', msg: 'Descobrir' },
 ];
+
+export const ucFirst = (string) => {
+   return string.charAt(0).toUpperCase() + string.slice(1);
+};

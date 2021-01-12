@@ -1,7 +1,7 @@
 import './styles/main.scss';
 
-function App(props) {
-   return <>{props.children}</>;
-}
+const App = (props) => {
+   return <div className={'wrapper'}>{props.children}</div>;
+};
 
 export default App;
